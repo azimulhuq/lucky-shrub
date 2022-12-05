@@ -40,7 +40,7 @@ body {
     max-width: 7em;
     height: auto;
     margin: 1em auto;
-    animation: nudge 5s linear infinite;
+    /* animation: nudge 5s linear infinite; */
 }
 
 @keyframes nudge {
@@ -132,7 +132,7 @@ nav a:hover {
     animation: fun-text 10s infinite;    
     color: transparent;
     background-size: 400%;
-    background-clip: text;
+    background-clip: content-box;
     -webkit-background-clip: text;
     color: transparent;
     background-position: left;
@@ -141,19 +141,11 @@ nav a:hover {
 
 @keyframes fun-text {
     0% {background-position: left;}
-    
-    8.5% {background-position: middle left;}
     17% {background-position: bottom left;}
-    25.5% {background-position: middle}
     34% {background-position: top right}
-    42.5% {background-position: middle right}
     51% {background-position: bottom right}
-    59.5% {background-position: middle right}
     68% {background-position: top right}
-    76.5% {background-position: middle}
     85% {background-position: bottom left;}
-    93.5% {background-position: middle left;}
-    
     100% {background-position: left;}
 }
 
